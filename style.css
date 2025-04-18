@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    background-image: url('parchment.jpg'); /* یه تصویر بافت توماری نیاز داریم */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Vazir', sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    color: #3b2f2f; /* قهوه‌ای تیره شبیه جوهر */
+      
+  }
+  
+header {
+    background: linear-gradient(135deg, #540000, #7e0a0a, #bd2020, hsl(0, 98%, 78%));
+    background-size: 300% 300%;
+    animation: headerGradient 10s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #d4bfa5;
+  }
+  
+  @keyframes headerGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  border: 4px solid #d4bfa5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.03);
+}
+
+  
+section {
+    background-color: rgba(255, 250, 230, 0.85);
+    border: 5px solid #aa8a5c;
+    border-radius: 25px;
+    box-shadow:
+      inset 0 0 15px rgba(0, 0, 0, 0.15),
+      0 0 20px rgba(170, 138, 92, 0.5);
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+
+section h2 {
+  color: #800020;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-right: 4px solid #d4bfa5;
+  padding-right: 10px;
+}
+
+section:hover {
+  transform: scale(1.01);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "✔";
+  color: #800020;
+  margin-left: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 2px solid #d4bfa5;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #800020;
+}
+
+button {
+  background: #800020;
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(128, 0, 32, 0.3);
+}
+
+button:hover {
+  background: #5e0016;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #2b2b2b;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  border-top: 4px solid #fff2bf;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* انیمیشن نمایش در اسکرول */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header img {
+      width: 90px;
+      height: 90px;
+    }
+  
+    section {
+      width: 90%;
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.8rem;
+    }
+  
+    form input,
+    form textarea {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  
+
+  #contact {
+    max-height: 35vh; /* یا می‌تونی بذاری 25vh */
+    overflow: auto;
+    padding: 1.5rem;
+  }
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  form label {
+    font-size: 0.9rem;
+  }
+  
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  button {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+  

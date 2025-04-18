@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
 body {
-    background-image: url('parchment.jpg'); /* یه تصویر بافت توماری نیاز داریم */
+    background-image: url('parchment.jpg'); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -9,8 +9,7 @@ body {
     direction: rtl;
     margin: 0;
     padding: 0;
-    color: #3b2f2f; /* قهوه‌ای تیره شبیه جوهر */
-      
+    color: #3b2f2f; 
   }
   
 header {
@@ -32,10 +31,16 @@ header {
   }
   
 
+
+
+
 header h1 {
   font-size: 2rem;
   margin: 0;
 }
+
+
+
 
 header img {
   width: 130px;
@@ -46,6 +51,9 @@ header img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease;
 }
+
+
+
 
 header img:hover {
   transform: scale(1.03);
@@ -65,7 +73,10 @@ section {
     font-size: 1rem;
     line-height: 1.8;
   }
-  
+
+
+
+
 
 section h2 {
   color: #800020;
@@ -74,6 +85,10 @@ section h2 {
   border-right: 4px solid #d4bfa5;
   padding-right: 10px;
 }
+
+
+
+
 
 section:hover {
   transform: scale(1.01);
@@ -90,6 +105,9 @@ ul li::before {
   margin-left: 8px;
 }
 
+
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -105,9 +123,15 @@ input, textarea {
   transition: border-color 0.3s ease;
 }
 
+
+
+
 input:focus, textarea:focus {
   border-color: #800020;
 }
+
+
+
 
 button {
   background: #800020;
@@ -126,6 +150,10 @@ button:hover {
   transform: scale(1.05);
 }
 
+
+
+
+
 footer {
   background-color: #2b2b2b;
   color: #f0f0f0;
@@ -136,7 +164,10 @@ footer {
   box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* انیمیشن نمایش در اسکرول */
+
+
+
+
 .scroll-section {
   opacity: 0;
   transform: translateY(50px);
@@ -181,7 +212,7 @@ footer {
   
 
   #contact {
-    max-height: 35vh; /* یا می‌تونی بذاری 25vh */
+    max-height: 35vh; 
     overflow: auto;
     padding: 1.5rem;
   }
